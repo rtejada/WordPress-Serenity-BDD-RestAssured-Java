@@ -30,7 +30,7 @@ Feature: Users management
       | userId |
       | 100    |
 
-  Scenario: Delete a specific user
+  Scenario: Create and also delete user
     Given  a new user has been created
     When I want to delete the new user
     Then the API should return the status "200"

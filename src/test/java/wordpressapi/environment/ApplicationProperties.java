@@ -1,4 +1,4 @@
-package environment;
+package wordpressapi.environment;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -41,7 +41,6 @@ public class ApplicationProperties {
         try {
             prop.load(getClassLoader().getResourceAsStream(fileName));
         } catch (IOException e) {
-            e.printStackTrace();
             logger.error("Unable to load the file {}", fileName);
         }
 
